@@ -6,15 +6,7 @@ const config = {
 	preprocess: vitePreprocess(),
 
     kit: {
-        files: {
-			assets: 'static',
-			lib: 'src/lib',
-			params: 'src/params',
-			routes: 'src/routes',
-			appTemplate: 'src/app.html',
-		},
         adapter: adapter({
-            fallback: 'index.html',
     }),
     }
 
