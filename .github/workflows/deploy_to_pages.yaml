@@ -19,9 +19,11 @@ jobs:
 
     - name: Install dependencies
       run: npm ci  # Modify or remove if not using Node
+      working-directory: marketplace
 
     - name: Build
       run: npm run build  # Modify this according to your build command
+      working-directory: marketplace
 
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v2
